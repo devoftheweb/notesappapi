@@ -22,11 +22,9 @@ custom:
   webpack:
     webpackConfig: ./webpack.config.js
     includeModules: true
-  # These environment variables are made available to our functions
-  # under process.env.
-  environment:
-    tableName: ${self:custom.tableName}
-    stripeSecretKey: ${self:custom.environment.stripeSecretKey}
+  # Load our secret environment variables based on the current stage.
+  # Fallback to default if it is not in prod.
+  environment: ${file(env.yml):${self:custom.stage}, file(env.yml):default}
 
 provider:
   name: aws
@@ -40,6 +38,7 @@ provider:
   # under process.env.
   environment:
     tableName: ${self:custom.tableName}
+    stripeSecretKey: ${self:custom.environment.stripeSecretKey}
 
   iamRoleStatements:
     - Effect: Allow
