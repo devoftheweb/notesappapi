@@ -22,6 +22,11 @@ custom:
   webpack:
     webpackConfig: ./webpack.config.js
     includeModules: true
+  # These environment variables are made available to our functions
+  # under process.env.
+  environment:
+    tableName: ${self:custom.tableName}
+    stripeSecretKey: ${self:custom.environment.stripeSecretKey}
 
 provider:
   name: aws
@@ -112,6 +117,15 @@ functions:
       - http:
           path: notes/{id}
           method: delete
+          cors: true
+          authorizer: aws_iam
+
+  billing:
+    handler: billing.main
+    events:
+      - http:
+          path: billing
+          method: post
           cors: true
           authorizer: aws_iam
 
