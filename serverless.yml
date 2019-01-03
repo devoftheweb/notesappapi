@@ -97,6 +97,7 @@ functions:
 
   update:
     # Defines an HTTP API endpoint that calls the main function in update.js
+    # random comment
     # - path: url path is /notes/{id}
     # - method: PUT request
     handler: update.main
