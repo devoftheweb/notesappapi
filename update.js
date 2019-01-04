@@ -4,7 +4,11 @@ import { success, failure } from "./libs/response-lib";
 export async function main(event, context) {
   const data = JSON.parse(event.body);
   const params = {
+<<<<<<< HEAD
     TableName: "notes",
+=======
+    TableName: process.env.tableName,
+>>>>>>> 28d1d3206963d265ad6aef1636cf065c8a77719c
     // 'Key' defines the partition key and sort key of the item to be updated
     // - 'userId': Identity Pool identity id of the authenticated user
     // - 'noteId': path parameter
@@ -31,4 +35,8 @@ export async function main(event, context) {
   } catch (e) {
     return failure({ status: false });
   }
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> 28d1d3206963d265ad6aef1636cf065c8a77719c

@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 # Serverless Node.js Starter
+=======
+# JMDev
+>>>>>>> 28d1d3206963d265ad6aef1636cf065c8a77719c
 
 A Serverless starter that adds ES7 syntax, serverless-offline, environment variables, and unit test support. Part of the [Serverless Stack](http://serverless-stack.com) guide.
 
@@ -20,6 +24,7 @@ A Serverless starter that adds ES7 syntax, serverless-offline, environment varia
 
 ---
 
+<<<<<<< HEAD
 ### Demo
 
 A demo version of this service is hosted on AWS - [`https://z6pv80ao4l.execute-api.us-east-1.amazonaws.com/dev/hello`](https://z6pv80ao4l.execute-api.us-east-1.amazonaws.com/dev/hello)
@@ -44,6 +49,8 @@ const message = ({ time, ...rest }) => new Promise((resolve, reject) =>
 );
 ```
 
+=======
+>>>>>>> 28d1d3206963d265ad6aef1636cf065c8a77719c
 ### Requirements
 
 - [Install the Serverless Framework](https://serverless.com/framework/docs/providers/aws/guide/installation/)
@@ -53,19 +60,31 @@ const message = ({ time, ...rest }) => new Promise((resolve, reject) =>
 
 To create a new Serverless project.
 
+<<<<<<< HEAD
 ``` bash
+=======
+```bash
+>>>>>>> 28d1d3206963d265ad6aef1636cf065c8a77719c
 $ serverless install --url https://github.com/AnomalyInnovations/serverless-nodejs-starter --name my-project
 ```
 
 Enter the new directory
 
+<<<<<<< HEAD
 ``` bash
+=======
+```bash
+>>>>>>> 28d1d3206963d265ad6aef1636cf065c8a77719c
 $ cd my-project
 ```
 
 Install the Node.js packages
 
+<<<<<<< HEAD
 ``` bash
+=======
+```bash
+>>>>>>> 28d1d3206963d265ad6aef1636cf065c8a77719c
 $ npm install
 ```
 
@@ -73,25 +92,41 @@ $ npm install
 
 To run unit tests on your local
 
+<<<<<<< HEAD
 ``` bash
+=======
+```bash
+>>>>>>> 28d1d3206963d265ad6aef1636cf065c8a77719c
 $ npm test
 ```
 
 To run a function on your local
 
+<<<<<<< HEAD
 ``` bash
+=======
+```bash
+>>>>>>> 28d1d3206963d265ad6aef1636cf065c8a77719c
 $ serverless invoke local --function hello
 ```
 
 To simulate API Gateway locally using [serverless-offline](https://github.com/dherault/serverless-offline)
 
+<<<<<<< HEAD
 ``` bash
+=======
+```bash
+>>>>>>> 28d1d3206963d265ad6aef1636cf065c8a77719c
 $ serverless offline start
 ```
 
 Run your tests
 
+<<<<<<< HEAD
 ``` bash
+=======
+```bash
+>>>>>>> 28d1d3206963d265ad6aef1636cf065c8a77719c
 $ npm test
 ```
 
@@ -99,13 +134,21 @@ We use Jest to run our tests. You can read more about setting up your tests [her
 
 Deploy your project
 
+<<<<<<< HEAD
 ``` bash
+=======
+```bash
+>>>>>>> 28d1d3206963d265ad6aef1636cf065c8a77719c
 $ serverless deploy
 ```
 
 Deploy a single function
 
+<<<<<<< HEAD
 ``` bash
+=======
+```bash
+>>>>>>> 28d1d3206963d265ad6aef1636cf065c8a77719c
 $ serverless deploy function --function hello
 ```
 
