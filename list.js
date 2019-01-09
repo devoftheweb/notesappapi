@@ -3,11 +3,7 @@ import { success, failure } from "./libs/response-lib";
 
 export async function main(event, context) {
   const params = {
-<<<<<<< HEAD
-    TableName: "notes",
-=======
     TableName: process.env.tableName,
->>>>>>> 28d1d3206963d265ad6aef1636cf065c8a77719c
     // 'KeyConditionExpression' defines the condition for the query
     // - 'userId = :userId': only return items with matching 'userId'
     //   partition key
@@ -27,8 +23,4 @@ export async function main(event, context) {
   } catch (e) {
     return failure({ status: false });
   }
-<<<<<<< HEAD
 }
-=======
-}
->>>>>>> 28d1d3206963d265ad6aef1636cf065c8a77719c
