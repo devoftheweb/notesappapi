@@ -1,10 +1,6 @@
 {
   "name": "notes-app-api",
-<<<<<<< HEAD
-  "version": "1.1.0",
-=======
   "version": "1.1.1",
->>>>>>> 28d1d3206963d265ad6aef1636cf065c8a77719c
   "description": "A Node.js starter for the Serverless Framework with async/await and unit test support",
   "main": "handler.js",
   "scripts": {
@@ -33,10 +29,7 @@
   "dependencies": {
     "babel-runtime": "^6.26.0",
     "source-map-support": "^0.4.18",
-<<<<<<< HEAD
-=======
     "stripe": "^6.20.0",
->>>>>>> 28d1d3206963d265ad6aef1636cf065c8a77719c
     "uuid": "^3.3.2"
   }
 }
